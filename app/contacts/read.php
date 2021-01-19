@@ -22,7 +22,7 @@ $num_contacts = $pdo->query('SELECT COUNT(*) FROM contacts')->fetchColumn();
 
 <div class="content read">
 	<h2>Read Contacts</h2>
-	<a href="create.php" class="create-contact">Create Contact</a>
+	<a href="http://localhost/source-code/practice/crud-php-app/app/contacts/create.php" class="create-contact">Create Contact</a>
 	<table>
         <thead>
             <tr>
@@ -45,8 +45,8 @@ $num_contacts = $pdo->query('SELECT COUNT(*) FROM contacts')->fetchColumn();
                 <td><?=$contact['title']?></td>
                 <td><?=$contact['created']?></td>
                 <td class="actions">
-                    <a href="update.php?id=<?=$contact['id']?>" class="edit"><i class="fas fa-pen fa-xs"></i></a>
-                    <a href="delete.php?id=<?=$contact['id']?>" class="trash"><i class="fas fa-trash fa-xs"></i></a>
+                    <a href="http://localhost/source-code/practice/crud-php-app/app/contacts/update.php?id=<?=$contact['id']?>" class="edit"><i class="fas fa-pen fa-xs"></i></a>
+                    <a href="http://localhost/source-code/practice/crud-php-app/app/contacts/delete.php?id=<?=$contact['id']?>" class="trash"><i class="fas fa-trash fa-xs"></i></a>
                 </td>
             </tr>
             <?php endforeach; ?>
