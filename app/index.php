@@ -9,7 +9,7 @@ include './contacts/home.php';
 
 <div class="content">
 	<h2>Home</h2>
-	<p>Welcome to the home page!</p>
+	<p>Welcome to the home page practice CRUD using php & mysql!</p>
 </div>
 
 <?=template_footer()?>
